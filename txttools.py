@@ -158,5 +158,5 @@ def plot_ngrams_class(ngrams_dict,  size=10, title='n-grams', subplots=(14,2), c
         grams_df = grams_df.sort_values(['count'], ascending=False).reset_index(drop=True)
         plt.subplot(subplots[0], subplots[1], sub_idx)
         sns.barplot(y=grams_df['grams'][:size], x=grams_df['count'][:size], color=color)
-        plt.title(title + "pour la classe {}".format(key))
+        plt.title(title + " pour la classe {}".format(key))
         sub_idx += 1
