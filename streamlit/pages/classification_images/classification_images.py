@@ -10,24 +10,23 @@ import cv2
 from PIL import Image
 import requests # to get image from the web
 import shutil # to save it locally
+import inspect
 
 
 # pylint: disable=line-too-long
 def write():
     """Used to write the page in the app.py file"""
-        
-    ast.shared.components.title_awesome("Test")
     
 # =============================== CONSTANTS ===================================
 
+    # Récupérer le chemin de ce script
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
     # Ouvrir une image au format BytesIO
-    IMGDUMMY = Image.open(os.path.normpath("./assets/images/imgdummy.png"))
+    #IMGDUMMY = Image.open(SCRIPT_DIR + r"\assets\images\imgdummy.png")
+    IMGDUMMY = Image.open(SCRIPT_DIR + os.path.normpath("/assets/images/imgdummy.png"))
+    
 
-# ================================= CODE ======================================
-
-# ---------------------------- INITIALIZATION ---------------------------------
-
-
+# ================================ CODE =======================================
 
 # ------------------------------- LAYOUT --------------------------------------
 
