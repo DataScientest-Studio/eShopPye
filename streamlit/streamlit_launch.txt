@@ -1,0 +1,6 @@
+cd "C:\Users\basti\ANACONDA\eShopPye\bastien\streamlit\pages\classification_images"
+streamlit run classification_images.py
+
+
+cd "C:\Users\basti\ANACONDA\eShopPye\bastien\streamlit"
+streamlit run app.py
