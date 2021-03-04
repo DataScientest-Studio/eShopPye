@@ -19,8 +19,7 @@ PAGES = {
     "Données": pages.donnees.donnees,
     "Classification d'image": pages.classification_images.classification_images,
     "Classification de texte": pages.classification_texte.classification_texte,
-    "Classification bimodale": pages.classification_bimodale.classification_bimodale,
-    "Conlusion": pages.conclusion.conclusion
+    "Classification bimodale": pages.classification_bimodale.classification_bimodale
 }
 
 
@@ -29,15 +28,21 @@ def main():
     """Main function of the App"""
     
     # Create sidebar and set title
-    st.sidebar.title("Menu")
+    st.sidebar.title("Projet eShopPye")
     
     # Page selection
-    selection = st.sidebar.radio("Aller à:", list(PAGES.keys()))
+    selection = st.sidebar.radio("Barre de navigation", list(PAGES.keys()))
     page = PAGES[selection]
     
     # Show loading
-    with st.spinner(f"Chargement de {selection}..."):
+    with st.spinner("Chargement de {}...".format(selection)):
         ast.shared.components.write_page(page)
+    
+    # Info box
+    st.sidebar.info(
+		"Réalisé par: Nada STAOUITE, Bastien PIQUEREAU, Lucas GANDY. "
+        "Sous la supervision de: Chloé GUIGA de Datascientest."
+        )
 
 
 
