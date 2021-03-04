@@ -67,7 +67,7 @@ def write():
     prepro = st.beta_container()
     col1, col2 = prepro.beta_columns(2)
     # Image (filled with placeholder at first)
-    col1.image(Image.open(PATH_DUMMY))
+    imgslot = col1.image(Image.open(PATH_DUMMY))
     # Description
     col2.text(
         "Avant de pouvoir être traitée par notre\n"
@@ -85,7 +85,7 @@ def write():
     if img_io:
         img_resz = cv2.resize(img, (256, 256))
         img_prepro = vgg16.preprocess_input(img_resz)
-        col1.image(np.clip(img_prepro/255, 0, 1), caption="Image prétraitée")
+        imgslot.image(np.clip(img_prepro/255, 0, 1), caption="Image prétraitée")
     
     
     st.header("Modèle utilisé")
