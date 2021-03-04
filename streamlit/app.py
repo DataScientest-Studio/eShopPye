@@ -9,7 +9,7 @@ import pages.classification_bimodale.classification_bimodale
 import pages.conclusion.conclusion
 
 
-# Load services
+# Load ast services
 ast.core.services.other.set_logging_format()
 
 
