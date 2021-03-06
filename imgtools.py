@@ -1,12 +1,13 @@
+# This file contains functions used in the data_exploration.ipynb and
+# data_viz_image.ipynb files.
+
+
 import os
 import cv2
 import matplotlib.pyplot as plt
 import textwrap
 import numpy as np
 from typing import Union
-
-
-version = 3
 
 
 def load_id(path: str, imageids: Union[str, list]):
