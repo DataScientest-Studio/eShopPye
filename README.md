@@ -22,8 +22,7 @@ Les données utilisées sont la propriété de *Rakuten Institute of Technology*
 
 Le jeu de données disponible pour l’entraînement (et la validation) est constitué de 84916 observations.  
 
-Chaque observation représente un article du catalogue de la plateforme de e-commerce de *Rakuten France*.  
-Chaque observation comporte nécessairement une image et une désignation textuelle, et éventuellement une description textuelle plus détaillée.  
+Chaque observation représente un article du catalogue de la plateforme de e-commerce de *Rakuten France*, et comporte nécessairement une image et une désignation textuelle, et éventuellement une description textuelle plus détaillée.  
 
 
 Description des fichiers  
